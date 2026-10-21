@@ -6,11 +6,13 @@
   <meta name="theme-color" content="#101b3a">
   <meta name="description" content="Clases particulares de percusión en Barbosa, Santander. Aprende batería, timbal, güira y conga con Iban Darío Pazos.">
   <title>Ritmo & Talento | Clases de percusión en Barbosa</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 </head>
 <body>
   <header class="site-header">
@@ -28,24 +30,62 @@
         <a href="#tarifas">Tarifas</a>
         <a href="#profesor">Profesor</a>
         <a href="#ubicacion">Ubicación</a>
-        <a class="nav-cta" href="#contacto">Consultar por WhatsApp <span>↗</span></a>
+        <a class="nav-cta whatsapp-link" href="#contacto">Consultar por WhatsApp <span>↗</span></a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-photo" role="img" aria-label="Batería e instrumentos de percusión en un estudio musical"></div>
-      <div class="hero-shade"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">CLASES PARTICULARES DE PERCUSIÓN</p>
-        <h1><span>Descubre el</span><strong>talento</strong><em>que hay en ti</em></h1>
-        <p class="hero-copy">La música no solo se escucha…<br>¡se vive, se siente y se toca!</p>
-        <a class="button button-yellow whatsapp-link" href="#contacto">
-          <span class="whatsapp-icon" aria-hidden="true">◉</span> Consulta por WhatsApp <span aria-hidden="true">›</span>
-        </a>
-        <div class="audiences"><span>Niños</span><b>•</b><span>Jóvenes</span><b>•</b><span>Adultos</span></div>
+    <section class="hero" id="inicio" data-carousel>
+      <div class="hero-slide is-active">
+        <div class="hero-photo hero-photo-1" role="img" aria-label="Batería e instrumentos de percusión en un estudio musical"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">CLASES PARTICULARES DE PERCUSIÓN</p>
+          <h1><span>Descubre el</span><strong>talento</strong><em>que hay en ti</em></h1>
+          <p class="hero-copy">La música no solo se escucha…<br>¡se vive, se siente y se toca!</p>
+          <a class="button button-yellow whatsapp-link" href="#contacto">
+            <span class="whatsapp-icon" aria-hidden="true">◉</span> Consulta por WhatsApp <span aria-hidden="true">›</span>
+          </a>
+          <div class="audiences"><span>Niños</span><b>•</b><span>Jóvenes</span><b>•</b><span>Adultos</span></div>
+        </div>
       </div>
+      <div class="hero-slide">
+        <div class="hero-photo hero-photo-2" role="img" aria-label="Congas y bongós listos para tocar en un estudio"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">TÉCNICA Y RITMO LATINO</p>
+          <h1><span>Siente el ritmo</span><strong>en tus</strong><em>manos</em></h1>
+          <p class="hero-copy">Timbal, güira y conga:<br>aprende los patrones que mueven la fiesta.</p>
+          <div class="hero-tags"><span>Timbal</span><span>Güira</span><span>Conga</span></div>
+          <a class="text-link hero-text-link whatsapp-link" data-wa-message="Hola, quiero agendar una clase de prueba de percusión." href="#contacto">Agenda tu clase de prueba <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-photo hero-photo-3" role="img" aria-label="Niño tocando batería"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">APRENDE JUGANDO</p>
+          <h1><span>Clases para</span><strong>toda</strong><em>la familia</em></h1>
+          <p class="hero-copy">Desde los primeros golpes<br>hasta tocar tus canciones favoritas.</p>
+          <div class="audience-badges">
+            <span class="audience-badge"><span class="audience-badge-icon" aria-hidden="true">☺</span> Niños</span>
+            <span class="audience-badge audience-badge-pink"><span class="audience-badge-icon" aria-hidden="true">♬</span> Jóvenes y adultos</span>
+          </div>
+          <a class="button button-outline whatsapp-link" data-wa-message="Hola, quiero más información sobre las clases para niños y jóvenes." href="#contacto">
+            <span class="whatsapp-icon" aria-hidden="true">◉</span> Escríbenos por WhatsApp <span aria-hidden="true">›</span>
+          </a>
+        </div>
+      </div>
+
+      <button class="hero-arrow hero-prev" type="button" aria-label="Slide anterior">‹</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Slide siguiente">›</button>
+      <div class="hero-dots" role="tablist" aria-label="Seleccionar slide del carrusel">
+        <button class="hero-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Ir al slide 1"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Ir al slide 2"></button>
+        <button class="hero-dot" type="button" role="tab" aria-selected="false" aria-label="Ir al slide 3"></button>
+      </div>
+
       <div class="hero-note note-one" aria-hidden="true">♪</div>
       <div class="hero-note note-two" aria-hidden="true">♫</div>
       <div class="paint-edge" aria-hidden="true"></div>
@@ -53,29 +93,29 @@
 
     <section class="section instruments-section" id="instrumentos">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <span class="spark" aria-hidden="true">✳</span>
           <h2>Encuentra tu ritmo</h2>
           <span class="spark" aria-hidden="true">✳</span>
           <p>Aprende a tocar instrumentos de percusión con clases personalizadas.</p>
         </div>
         <div class="instrument-grid">
-          <article class="instrument-card">
+          <article class="instrument-card reveal">
             <div class="instrument-image drums-image" role="img" aria-label="Batería musical"></div>
             <div class="paint-label yellow-paint">Batería</div>
             <p>Ritmo, coordinación y técnica.</p>
           </article>
-          <article class="instrument-card">
+          <article class="instrument-card reveal">
             <div class="instrument-image timbal-image" role="img" aria-label="Timbales"></div>
             <div class="paint-label pink-paint">Timbal</div>
             <p>Explora los ritmos latinos.</p>
           </article>
-          <article class="instrument-card">
+          <article class="instrument-card reveal">
             <div class="instrument-image guira-image" role="img" aria-label="Güira y raspador"></div>
             <div class="paint-label mint-paint">Güira</div>
             <p>Aprende patrones y acompañamientos.</p>
           </article>
-          <article class="instrument-card">
+          <article class="instrument-card reveal">
             <div class="instrument-image conga-image" role="img" aria-label="Tambores conga"></div>
             <div class="paint-label lilac-paint">Conga</div>
             <p>Desarrolla tu sentido del ritmo.</p>
@@ -86,9 +126,9 @@
 
     <section class="section pricing-section" id="tarifas">
       <div class="container">
-        <div class="brush-heading"><h2>Clases para todas las edades</h2></div>
+        <div class="brush-heading reveal"><h2>Clases para todas las edades</h2></div>
         <div class="pricing-grid">
-          <article class="price-card kids-card">
+          <article class="price-card kids-card reveal">
             <div class="price-icon" aria-hidden="true">☺</div>
             <div class="price-info">
               <h3>Niños</h3>
@@ -96,7 +136,7 @@
               <div class="price"><strong>$20.000</strong><span>/ hora</span></div>
             </div>
           </article>
-          <article class="price-card adults-card">
+          <article class="price-card adults-card reveal">
             <div class="price-icon people-icon" aria-hidden="true">♬</div>
             <div class="price-info">
               <h3>Jóvenes y adultos</h3>
@@ -110,8 +150,8 @@
     </section>
 
     <section class="teacher-section" id="profesor">
-      <div class="teacher-photo" role="img" aria-label="Percusionista practicando batería"></div>
-      <div class="teacher-content">
+      <div class="teacher-photo reveal" role="img" aria-label="Percusionista practicando batería"></div>
+      <div class="teacher-content reveal">
         <p class="eyebrow">APRENDE A TU RITMO</p>
         <h2>Conoce a tu profesor</h2>
         <h3>Iban Darío Pazos</h3>
@@ -123,7 +163,7 @@
 
     <section class="section location-section" id="ubicacion">
       <div class="container location-wrap">
-        <div class="location-copy">
+        <div class="location-copy reveal">
           <span class="location-pin" aria-hidden="true">●</span>
           <div>
             <h2>Barbosa, Santander</h2>
@@ -131,7 +171,7 @@
             <p class="location-hint">Ven a conocer el espacio y empieza a tocar.</p>
           </div>
         </div>
-        <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=Calle+15B+%235-67+Barbosa+Santander" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps">
+        <a class="map-card reveal" href="https://www.google.com/maps/search/?api=1&query=Calle+15B+%235-67+Barbosa+Santander" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps">
           <span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span>
           <span class="map-label">Barbosa</span><span class="map-marker">♥</span>
           <span class="map-open">Abrir mapa ↗</span>
@@ -141,15 +181,54 @@
 
     <section class="contact-band" id="contacto">
       <div class="container contact-inner">
-        <div class="music-deco" aria-hidden="true">♫</div>
-        <div>
+        <div class="contact-intro reveal">
+          <div class="music-deco" aria-hidden="true">♫</div>
           <p class="eyebrow">TU PRÓXIMO PASO EMPIEZA AQUÍ</p>
           <h2>¡Vamos a hacer música!</h2>
           <p>Escríbenos para consultar horarios, resolver tus dudas y reservar tu clase.</p>
+          <a class="button button-green whatsapp-link" href="#contacto">
+            <span class="whatsapp-icon" aria-hidden="true">◉</span> Hablar directo por WhatsApp <span aria-hidden="true">›</span>
+          </a>
         </div>
-        <a class="button button-green whatsapp-link" href="#contacto">
-          <span class="whatsapp-icon" aria-hidden="true">◉</span> Consultar por WhatsApp <span aria-hidden="true">›</span>
-        </a>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <label for="cf-name">Nombre</label>
+            <input id="cf-name" name="nombre" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row form-row-split">
+            <div>
+              <label for="cf-instrument">Instrumento</label>
+              <select id="cf-instrument" name="instrumento">
+                <option value="Batería">Batería</option>
+                <option value="Timbal">Timbal</option>
+                <option value="Güira">Güira</option>
+                <option value="Conga">Conga</option>
+                <option value="No estoy seguro/a">No estoy seguro/a</option>
+              </select>
+            </div>
+            <div>
+              <label for="cf-audience">Clase para</label>
+              <select id="cf-audience" name="publico">
+                <option value="niño/a">Niño/a</option>
+                <option value="joven">Joven</option>
+                <option value="adulto">Adulto</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="cf-schedule">Horario preferido <span>(opcional)</span></label>
+            <input id="cf-schedule" name="horario" type="text" placeholder="Ej. tardes entre semana" autocomplete="off">
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Mensaje <span>(opcional)</span></label>
+            <textarea id="cf-message" name="mensaje" rows="2" placeholder="Cuéntanos tu experiencia previa o tus dudas"></textarea>
+          </div>
+          <button class="button button-yellow" type="submit">
+            <span class="whatsapp-icon" aria-hidden="true">◉</span> Enviar por WhatsApp <span aria-hidden="true">›</span>
+          </button>
+          <p class="form-hint">Al enviar, abrimos WhatsApp con tu mensaje listo para confirmar el envío.</p>
+        </form>
       </div>
     </section>
   </main>
@@ -158,7 +237,7 @@
     <div class="container footer-inner">
       <a class="footer-brand" href="#inicio">♫ <strong>Ritmo & Talento</strong></a>
       <p>Clases particulares de percusión · Barbosa, Santander</p>
-      <p class="credit">Desarrollado por <a href="https://mod3d.co/" target="_blank" rel="noopener noreferrer">MOD.3D</a></p>
+      <p class="credit">© <span id="copyright-year"></span> Ritmo &amp; Talento. Todos los derechos reservados.</p>
     </div>
   </footer>
 
